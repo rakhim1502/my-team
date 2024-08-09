@@ -1,3 +1,15 @@
+/* CUSTOM PROPS */
+:root {
+  --midnight-green: #014e56;
+  --light-coral: #f67e7e;
+  --white: #fff;
+  --rapture-blue: #79c8c7;
+  --police-blue: #2c6269;
+  --deep-jungle-green: #004047;
+  --sacramento-state-green: #012f34;
+  --dark-green: #002529;
+}
+
 /* GLOBAL */
 
 html {
@@ -17,13 +29,13 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Livvic", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600;
   height: 100%;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--midnight-green);
+  color: var(--white);
 }
 
 img {
@@ -33,10 +45,94 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.site__header{
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.site__header-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.logo {
+  display: block;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.img {
+  width: 160px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 80px;
+}
+
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+.sitenav__link {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.sitenav__link:hover {
+  color: var(--light-coral);
+}
+
+.sitenav__link:active {
+  opacity: 0.8;
+}
+
+.button {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 8px 30px;
+  border: 2px solid var(--white);
+  border-radius: 24px;
+  transition: background-color 0.4s ease,
+  color 0.4s ease;
+}
+
+.button:active {
+  opacity: 0.8;
+}
+
+.button-header {
+  margin-left: auto;
+}
+
+.button-header:hover {
+  background-color: #fff;
+  color: var(--dark-green);
+}
+
+
+.main-content {
+  flex-grow: 1;
 }
