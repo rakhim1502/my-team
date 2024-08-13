@@ -171,18 +171,86 @@ img {
   width: 100%;
   max-width: 445px;
 }
-.hero-divider {
+.divider {
   padding: 0;
   margin: 0;
-  margin-bottom: 79px;
   border: 0;
   width: 50px;
   height: 4px;
-  background-color: var(--rapture-blue);
 }
+
+.divider-blue {
+  background-color: var(--rapture-blue);
+  margin-bottom: 79px;
+}
+
 .hero-text {
   padding: 0;
   margin: 0;
   font-size: 18px;
   line-height: 28px;
+}
+
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+
+.divider-red {
+  background-color: var(--light-coral);
+  margin-bottom: 54px;
+}
+
+.feratures-info {
+  width: 100%;
+  max-width: 445px;
+  padding: 0;
+  margin: 0;
+  margin-right: 118px;
+}
+
+
+.features-heading {
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+}
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.features__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.features__item-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 32px;
+}
+
+.features__item-title {
+  padding: 0;
+  margin: 0;
+  padding-top: 7px;
+  color: var(--light-coral);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.features__item-text {
+  padding: 0;
+  margin: 0;
 }
